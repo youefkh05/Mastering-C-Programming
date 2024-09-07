@@ -23,5 +23,8 @@
     <ClInclude Include="Std_types.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="system_info.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

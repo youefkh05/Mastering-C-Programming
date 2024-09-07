@@ -1,4 +1,6 @@
 ﻿  main.c
+D:\work\paid course\embeded\Projects\Mastering-C-Programming\Data_Structure\Data_Structure\Std_types.h(11,2): warning C4138: '*/' found outside of comment
+D:\work\paid course\embeded\Projects\Mastering-C-Programming\Data_Structure\Data_Structure\Std_types.h(11,3): error C2059: syntax error: '/'
 D:\work\paid course\embeded\Projects\Mastering-C-Programming\Data_Structure\Data_Structure\main.c(11,9): warning C4477: 'printf' : format string '%i' requires an argument of type 'int', but variadic argument 1 has type 'size_t'
 D:\work\paid course\embeded\Projects\Mastering-C-Programming\Data_Structure\Data_Structure\main.c(11,9): message : consider using '%zi' in the format string
 D:\work\paid course\embeded\Projects\Mastering-C-Programming\Data_Structure\Data_Structure\main.c(12,9): warning C4477: 'printf' : format string '%i' requires an argument of type 'int', but variadic argument 1 has type 'size_t'
@@ -21,4 +23,3 @@ D:\work\paid course\embeded\Projects\Mastering-C-Programming\Data_Structure\Data
 D:\work\paid course\embeded\Projects\Mastering-C-Programming\Data_Structure\Data_Structure\main.c(20,9): message : consider using '%zi' in the format string
 D:\work\paid course\embeded\Projects\Mastering-C-Programming\Data_Structure\Data_Structure\main.c(42,16): warning C4307: '+': signed integral constant overflow
 D:\work\paid course\embeded\Projects\Mastering-C-Programming\Data_Structure\Data_Structure\main.c(43,16): warning C4307: '+': signed integral constant overflow
-  Data_Structure.vcxproj -> D:\work\paid course\embeded\Projects\Mastering-C-Programming\Data_Structure\x64\Debug\Data_Structure.exe

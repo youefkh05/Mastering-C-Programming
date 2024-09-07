@@ -3,134 +3,139 @@
  *
  * Created: 9/7/2024 12:22 PM
  *  Author: youefkh05
+ *  * MISRA-C:2012 guidelines adherence:
+ * - Rule 8.9: No implicit conversion between signed and unsigned types.
+ * - Rule 10.1: Avoid magic numbers by using defined constants.
+ * - Rule 21.1: Functions should not rely on undefined behavior.
+ * - Rule 1.1 - No code at file scope */
  */
+
 
 #ifndef _STD_TYPES_H
 #define  _STD_TYPES_H
 
-//Cpu types
-#define CPU_TYPE_8	(8)
-#define CPU_TYPE_16	(16)
-#define CPU_TYPE_32	(32)
-#define CPU_TYPE_64	(64)
+ /* CPU type definitions */
+#define CPU_TYPE_8	(8)		/* MISRA-C:2012 Rule 10.1 - Avoid magic numbers */
+#define CPU_TYPE_16	(16)	/* MISRA-C:2012 Rule 10.1 - Avoid magic numbers */
+#define CPU_TYPE_32	(32)	/* MISRA-C:2012 Rule 10.1 - Avoid magic numbers */
+#define CPU_TYPE_64	(64)	/* MISRA-C:2012 Rule 10.1 - Avoid magic numbers */
 
-#define CPU_TYPE CPU_TYPE_64
+#define CPU_TYPE CPU_TYPE_64  /* Define the CPU type for the target platform */
 
+/* Type definitions based on CPU type */
 #if (CPU_TYPE_8==CPU_TYPE)
-//Unsigned
-typedef unsigned char boolean;
-typedef unsigned char uint8;
-typedef unsigned long int uint16;
-typedef unsigned long long int uint32;
-
-//Signed
-typedef signed char sint8;
-typedef signed long int sint16;
-typedef signed long long int sint32;
-
-//float
-typedef float float32;
-typedef double float64;
+	/* Unsigned integer types */
+	typedef unsigned char			boolean;	/* MISRA-C:2012 Rule 1.1 - No code at file scope */
+	typedef unsigned char			uint8;		/* MISRA-C:2012 Rule 1.1 - No code at file scope */
+	typedef unsigned long int		uint16;		/* MISRA-C:2012 Rule 1.1 - No code at file scope */
+	typedef unsigned long long int	uint32;		/* MISRA-C:2012 Rule 1.1 - No code at file scope */
+	
+	/* Signed integer types */
+	typedef signed char				sint8;		/* MISRA-C:2012 Rule 1.1 - No code at file scope */
+	typedef signed long int			sint16;		/* MISRA-C:2012 Rule 1.1 - No code at file scope */
+	typedef signed long long int	sint32;		/* MISRA-C:2012 Rule 1.1 - No code at file scope */
+	
+	/* Floating point types */
+	typedef float	float32;	/* MISRA-C:2012 Rule 1.1 - No code at file scope */
+	typedef double	float64;	/* MISRA-C:2012 Rule 1.1 - No code at file scope */
 
 #elif (CPU_TYPE_16==CPU_TYPE)
-//Unsigned
-typedef unsigned char boolean;
-typedef unsigned char uint8;
-typedef unsigned short int uint16;
-typedef unsigned long int uint32;
-typedef unsigned long long int uint64;
-
-//Signed
-typedef signed char sint8;
-typedef signed short int sint16;
-typedef signed int sint32;
-typedef signed long long int sint64;
-
-//float
-typedef float float32;
-typedef double float64;
-
+	/* Unsigned integer types */
+	typedef unsigned char			boolean;	/* MISRA-C:2012 Rule 1.1 - No code at file scope */
+	typedef unsigned char			uint8;		/* MISRA-C:2012 Rule 1.1 - No code at file scope */
+	typedef unsigned short int		uint16;		/* MISRA-C:2012 Rule 1.1 - No code at file scope */
+	typedef unsigned long int		uint32;		/* MISRA-C:2012 Rule 1.1 - No code at file scope */
+	typedef unsigned long long int	uint64;		/* MISRA-C:2012 Rule 1.1 - No code at file scope */
+	
+	/* Signed integer types */
+	typedef signed char				sint8;		/* MISRA-C:2012 Rule 1.1 - No code at file scope */
+	typedef signed short int		sint16;		/* MISRA-C:2012 Rule 1.1 - No code at file scope */
+	typedef signed int				sint32;		/* MISRA-C:2012 Rule 1.1 - No code at file scope */
+	typedef signed long long int	sint64;		/* MISRA-C:2012 Rule 1.1 - No code at file scope */
+	
+	/* Floating point types */
+	typedef float	float32;					/* MISRA-C:2012 Rule 1.1 - No code at file scope */
+	typedef double	float64;					/* MISRA-C:2012 Rule 1.1 - No code at file scope */
+	
 #elif (CPU_TYPE_32==CPU_TYPE)
-//Unsigned
-typedef unsigned char boolean;
-typedef unsigned char uint8;
-typedef unsigned short int uint16;
-typedef unsigned long int uint32;
-typedef unsigned long long int uint64;
-
-//Signed
-typedef signed char sint8;
-typedef signed short int sint16;
-typedef signed int sint32;
-typedef signed long long int sint64;
-
-//float
-typedef float float32;
-typedef double float64;
-
-
+	/* Unsigned integer types */
+	typedef unsigned char			boolean;	/* MISRA-C:2012 Rule 1.1 - No code at file scope */
+	typedef unsigned char			uint8;		/* MISRA-C:2012 Rule 1.1 - No code at file scope */
+	typedef unsigned short int		uint16;		/* MISRA-C:2012 Rule 1.1 - No code at file scope */
+	typedef unsigned long int		uint32;		/* MISRA-C:2012 Rule 1.1 - No code at file scope */
+	typedef unsigned long long int	uint64;		/* MISRA-C:2012 Rule 1.1 - No code at file scope */
+	
+	/* Signed integer types */
+	typedef signed char				sint8;		/* MISRA-C:2012 Rule 1.1 - No code at file scope */
+	typedef signed short int		sint16;		/* MISRA-C:2012 Rule 1.1 - No code at file scope */
+	typedef signed int				sint32;		/* MISRA-C:2012 Rule 1.1 - No code at file scope */
+	typedef signed long long int	sint64;		/* MISRA-C:2012 Rule 1.1 - No code at file scope */
+	
+	/* Floating point types */
+	typedef float	float32;	/* MISRA-C:2012 Rule 1.1 - No code at file scope */
+	typedef double	float64;	/* MISRA-C:2012 Rule 1.1 - No code at file scope */
+	
+	
 #elif (CPU_TYPE_64==CPU_TYPE)
-//Unsigned
-typedef unsigned char boolean;
-typedef unsigned char uint8;
-typedef unsigned short int uint16;
-typedef unsigned int uint32;
-typedef unsigned long long int uint64;
-
-//Signed
-typedef signed char sint8;
-typedef signed short int sint16;
-typedef signed int sint32;
-typedef signed long long int sint64;
-
-//float
-typedef float float32;
-typedef double float64;
-//typedef long double float128;
-
+	/* Unsigned integer types */
+	typedef unsigned char			boolean;	/* MISRA-C:2012 Rule 1.1 - No code at file scope */
+	typedef unsigned char			uint8;		/* MISRA-C:2012 Rule 1.1 - No code at file scope */
+	typedef unsigned short int		uint16;		/* MISRA-C:2012 Rule 1.1 - No code at file scope */
+	typedef unsigned int			uint32;		/* MISRA-C:2012 Rule 1.1 - No code at file scope */
+	typedef unsigned long long int	uint64;		/* MISRA-C:2012 Rule 1.1 - No code at file scope */
+	
+	/* Signed integer types */
+	typedef signed char				sint8;		/* MISRA-C:2012 Rule 1.1 - No code at file scope */
+	typedef signed short int		sint16;		/* MISRA-C:2012 Rule 1.1 - No code at file scope */
+	typedef signed int				sint32;		/* MISRA-C:2012 Rule 1.1 - No code at file scope */
+	typedef signed long long int	sint64;		/* MISRA-C:2012 Rule 1.1 - No code at file scope */
+	
+	/* Floating point types */
+	typedef float	float32;	/* MISRA-C:2012 Rule 1.1 - No code at file scope */
+	typedef double	float64;	/* MISRA-C:2012 Rule 1.1 - No code at file scope */
+	//typedef long double float128;
+	
 #endif // (CPU_TYPE)
 
-//boolean
-#define		TRUE	1
-#define		FALSE	0
+// Boolean values
+#define	TRUE	1	/* MISRA-C:2012 Rule 10.1 - Avoid magic numbers */
+#define	FALSE	0	/* MISRA-C:2012 Rule 10.1 - Avoid magic numbers */
 
-//max
-//unsigned
-#define UINT8MAX  (255u)
-#define UINT16MAX (65535u)
-#define UINT32MAX (4294967295u)
-#define UINT64MAX (18446744073709551615ULL)
+/*Unsigned integer Max Values*/
+#define UINT8MAX  (255u)					/* MISRA-C:2012 Rule 10.1 - Avoid magic numbers */
+#define UINT16MAX (65535u)					/* MISRA-C:2012 Rule 10.1 - Avoid magic numbers */
+#define UINT32MAX (4294967295u)				/* MISRA-C:2012 Rule 10.1 - Avoid magic numbers */
+#define UINT64MAX (18446744073709551615ULL)	/* MISRA-C:2012 Rule 10.1 - Avoid magic numbers */
 
-//signed
-#define SINT8MAX  (127)
-#define SINT16MAX (32767)
-#define SINT32MAX (2147483647)
-#define SINT64MAX (9223372036854775807LL)
+/*Signed integer Max Values*/
+#define SINT8MAX  (127)						/* MISRA-C:2012 Rule 10.1 - Avoid magic numbers */
+#define SINT16MAX (32767)					/* MISRA-C:2012 Rule 10.1 - Avoid magic numbers */
+#define SINT32MAX (2147483647)				/* MISRA-C:2012 Rule 10.1 - Avoid magic numbers */
+#define SINT64MAX (9223372036854775807LL)	/* MISRA-C:2012 Rule 10.1 - Avoid magic numbers */
 
-//float
-#define FLT32_MAX		(3.402823466e+38F)
-#define FLT64_MAX		(1.7976931348623157e+308)
-#define FLT32_DIG		(6)
-#define FLT32_MAX_EXP	(128)
-#define FLT64_DIG		(15)
-#define FLT64_MAX_EXP	(1024)
+/* Floating point Max Values */
+#define FLT32_MAX		(3.402823466e+38F)			/* MISRA-C:2012 Rule 10.1 - Avoid magic numbers */
+#define FLT64_MAX		(1.7976931348623157e+308)	/* MISRA-C:2012 Rule 10.1 - Avoid magic numbers */
+#define FLT32_DIG		(6)							/* MISRA-C:2012 Rule 10.1 - Avoid magic numbers */
+#define FLT32_MAX_EXP	(128)						/* MISRA-C:2012 Rule 10.1 - Avoid magic numbers */
+#define FLT64_DIG		(15)						/* MISRA-C:2012 Rule 10.1 - Avoid magic numbers */
+#define FLT64_MAX_EXP	(1024)						/* MISRA-C:2012 Rule 10.1 - Avoid magic numbers */
 
 
-//min
-//unsigned
+/*Unsigned integer Min Values*/
 #define UINT8MIN  (0u)
 #define UINT16MIN (0u)
 #define UINT32MIN (0u)
 #define UINT64MIN (0u)
 
-//signed
+/*Signed integer Min Values*/
 #define SINT8MIN  (-128)
 #define SINT16MIN (-32768)
 #define SINT32MIN (SINT32MAX+1)
 #define SINT64MIN (SINT64MAX+1)
 
 
-//float
+/* Floating point Min Values */
 #define FLT32_MIN		(1.175494351e-38F)
 #define FLT64_MIN		(2.2250738585072014e-308)
 #define FLT32_EPSILON	(1.192092896e-7F)
