@@ -1,2 +1,24 @@
 ﻿  main.c
+D:\work\paid course\embeded\Projects\Mastering-C-Programming\Data_Structure\Data_Structure\main.c(11,9): warning C4477: 'printf' : format string '%i' requires an argument of type 'int', but variadic argument 1 has type 'size_t'
+D:\work\paid course\embeded\Projects\Mastering-C-Programming\Data_Structure\Data_Structure\main.c(11,9): message : consider using '%zi' in the format string
+D:\work\paid course\embeded\Projects\Mastering-C-Programming\Data_Structure\Data_Structure\main.c(12,9): warning C4477: 'printf' : format string '%i' requires an argument of type 'int', but variadic argument 1 has type 'size_t'
+D:\work\paid course\embeded\Projects\Mastering-C-Programming\Data_Structure\Data_Structure\main.c(12,9): message : consider using '%zi' in the format string
+D:\work\paid course\embeded\Projects\Mastering-C-Programming\Data_Structure\Data_Structure\main.c(13,9): warning C4477: 'printf' : format string '%i' requires an argument of type 'int', but variadic argument 1 has type 'size_t'
+D:\work\paid course\embeded\Projects\Mastering-C-Programming\Data_Structure\Data_Structure\main.c(13,9): message : consider using '%zi' in the format string
+D:\work\paid course\embeded\Projects\Mastering-C-Programming\Data_Structure\Data_Structure\main.c(14,9): warning C4477: 'printf' : format string '%i' requires an argument of type 'int', but variadic argument 1 has type 'size_t'
+D:\work\paid course\embeded\Projects\Mastering-C-Programming\Data_Structure\Data_Structure\main.c(14,9): message : consider using '%zi' in the format string
+D:\work\paid course\embeded\Projects\Mastering-C-Programming\Data_Structure\Data_Structure\main.c(15,9): warning C4477: 'printf' : format string '%i' requires an argument of type 'int', but variadic argument 1 has type 'size_t'
+D:\work\paid course\embeded\Projects\Mastering-C-Programming\Data_Structure\Data_Structure\main.c(15,9): message : consider using '%zi' in the format string
+D:\work\paid course\embeded\Projects\Mastering-C-Programming\Data_Structure\Data_Structure\main.c(16,9): warning C4477: 'printf' : format string '%i' requires an argument of type 'int', but variadic argument 1 has type 'size_t'
+D:\work\paid course\embeded\Projects\Mastering-C-Programming\Data_Structure\Data_Structure\main.c(16,9): message : consider using '%zi' in the format string
+D:\work\paid course\embeded\Projects\Mastering-C-Programming\Data_Structure\Data_Structure\main.c(17,9): warning C4477: 'printf' : format string '%i' requires an argument of type 'int', but variadic argument 1 has type 'size_t'
+D:\work\paid course\embeded\Projects\Mastering-C-Programming\Data_Structure\Data_Structure\main.c(17,9): message : consider using '%zi' in the format string
+D:\work\paid course\embeded\Projects\Mastering-C-Programming\Data_Structure\Data_Structure\main.c(18,9): warning C4477: 'printf' : format string '%i' requires an argument of type 'int', but variadic argument 1 has type 'size_t'
+D:\work\paid course\embeded\Projects\Mastering-C-Programming\Data_Structure\Data_Structure\main.c(18,9): message : consider using '%zi' in the format string
+D:\work\paid course\embeded\Projects\Mastering-C-Programming\Data_Structure\Data_Structure\main.c(19,9): warning C4477: 'printf' : format string '%i' requires an argument of type 'int', but variadic argument 1 has type 'size_t'
+D:\work\paid course\embeded\Projects\Mastering-C-Programming\Data_Structure\Data_Structure\main.c(19,9): message : consider using '%zi' in the format string
+D:\work\paid course\embeded\Projects\Mastering-C-Programming\Data_Structure\Data_Structure\main.c(20,9): warning C4477: 'printf' : format string '%i' requires an argument of type 'int', but variadic argument 1 has type 'size_t'
+D:\work\paid course\embeded\Projects\Mastering-C-Programming\Data_Structure\Data_Structure\main.c(20,9): message : consider using '%zi' in the format string
+D:\work\paid course\embeded\Projects\Mastering-C-Programming\Data_Structure\Data_Structure\main.c(42,16): warning C4307: '+': signed integral constant overflow
+D:\work\paid course\embeded\Projects\Mastering-C-Programming\Data_Structure\Data_Structure\main.c(43,16): warning C4307: '+': signed integral constant overflow
   Data_Structure.vcxproj -> D:\work\paid course\embeded\Projects\Mastering-C-Programming\Data_Structure\x64\Debug\Data_Structure.exe
