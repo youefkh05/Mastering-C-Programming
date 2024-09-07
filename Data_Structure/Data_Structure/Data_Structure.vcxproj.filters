@@ -13,18 +13,24 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="system_utilities">
+      <UniqueIdentifier>{8fea7c27-8dc3-4c61-a1d3-639125d140ee}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.c">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="system_utilities\system_info.c">
+      <Filter>system_utilities</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Std_types.h">
-      <Filter>Header Files</Filter>
+    <ClInclude Include="system_utilities\Std_types.h">
+      <Filter>system_utilities</Filter>
     </ClInclude>
-    <ClInclude Include="system_info.h">
-      <Filter>Header Files</Filter>
+    <ClInclude Include="system_utilities\system_info.h">
+      <Filter>system_utilities</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

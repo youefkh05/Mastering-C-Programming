@@ -128,10 +128,11 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="main.c" />
+    <ClCompile Include="system_utilities\system_info.c" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Std_types.h" />
-    <ClInclude Include="system_info.h" />
+    <ClInclude Include="system_utilities\Std_types.h" />
+    <ClInclude Include="system_utilities\system_info.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
