@@ -1,13 +1,14 @@
 ﻿/*
  * Std_types.h
  *
- * Created: 9/7/2024 12:22 PM
- *  Author: youefkh05
- *  * MISRA-C:2012 guidelines adherence:
- * - Rule 8.9: No implicit conversion between signed and unsigned types.
- * - Rule 10.1: Avoid magic numbers by using defined constants.
- * - Rule 21.1: Functions should not rely on undefined behavior.
- * - Rule 1.1 - No code at file scope */
+ * Created	:	9/7/2024 12:22 PM
+ *  Author	:	youefkh05
+ *  @user	:	Youefkh05	
+ *  MISRA-C	:	2012 guidelines adherence:
+ * - Rule 1.1	:	No code at file scope
+ * - Rule 8.9	:	No implicit conversion between signed and unsigned types.
+ * - Rule 10.1	:	Avoid magic numbers by using defined constants.
+ * - Rule 21.1	:	Functions should not rely on undefined behavior.
  */
 
 
