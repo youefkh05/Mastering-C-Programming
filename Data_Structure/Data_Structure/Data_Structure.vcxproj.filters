@@ -16,6 +16,9 @@
     <Filter Include="system_utilities">
       <UniqueIdentifier>{8fea7c27-8dc3-4c61-a1d3-639125d140ee}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Stack">
+      <UniqueIdentifier>{b9c55996-2f4e-4d3c-a0ff-b39ee885eccd}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.c">
@@ -24,6 +27,9 @@
     <ClCompile Include="system_utilities\system_info.c">
       <Filter>system_utilities</Filter>
     </ClCompile>
+    <ClCompile Include="Stack\Stack_ds.c">
+      <Filter>Stack</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="system_utilities\Std_types.h">
@@ -31,6 +37,9 @@
     </ClInclude>
     <ClInclude Include="system_utilities\system_info.h">
       <Filter>system_utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="Stack\Stack_ds.h">
+      <Filter>Stack</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

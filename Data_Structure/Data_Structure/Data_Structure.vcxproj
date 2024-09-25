@@ -128,9 +128,11 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="main.c" />
+    <ClCompile Include="Stack\Stack_ds.c" />
     <ClCompile Include="system_utilities\system_info.c" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Stack\Stack_ds.h" />
     <ClInclude Include="system_utilities\Std_types.h" />
     <ClInclude Include="system_utilities\system_info.h" />
   </ItemGroup>
