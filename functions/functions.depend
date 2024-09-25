@@ -1,0 +1,11 @@
+# depslib dependency file v1.0
+1690533077 source:d:\work\paid course\embeded\ahmed deploma\part 1 c programing\codes\functions\functions\main.c
+	<stdio.h>
+	<stdbool.h>
+
+1690631417 source:d:\work\paid course\embeded\ahmed deploma\part 1 c programing\codes\functions\main.c
+	<stdio.h>
+	<stdbool.h>
+	<math.h>
+	<string.h>
+
