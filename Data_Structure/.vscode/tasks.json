@@ -4,7 +4,7 @@
 		{
 			"type": "cppbuild",
 			"label": "Clang build",
-			"command": "C:\\mingw32+LLVM+Clang+LLDB\\bin\\clang.exe",
+			"command": "C:\\mingw64LLVM_Clang_LLD_LLDB\\bin\\clang.exe",
 			"args": [
 				"-fcolor-diagnostics",
 				"-fansi-escape-codes",
@@ -20,7 +20,7 @@
 				"$gcc"
 			],
 			"group": "build",
-			"detail": "compiler: C:\\mingw32+LLVM+Clang+LLDB\\bin\\clang.exe"
+			"detail": "compiler: C:\\mingw64LLVM_Clang_LLD_LLDB\\bin\\clang.exe"
 		},
 		{
 			"label": "Run Clang",
