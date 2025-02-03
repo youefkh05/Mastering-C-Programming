@@ -1,4 +1,3 @@
-
 /*========================================================================
 *   Project             : Main
 *   Platform            : Any
@@ -6,8 +5,22 @@
 *   SW version          : 1.0.0
 ========================================================================*/
 
+/**
+ * @file advanced_calculator.c
+ * @version	:	1.0.0 (small change will be 1.0.1, normal change 1.1.0,
+ * full change 2.0.0)
+ * @brief	:	Advanced Text-Based Calculator with Arithmetic, Bitwise,
+ * and Recursive Functions.
+ * @details	:	This file contains functions to perform basic
+ * arithmetic, bitwise operations, recursive calculations (factorial), function
+ * pointers, and dynamic memory handling. The calculator supports dynamic
+ * binding for operations and maintains a calculation history.
+ * @author	:	Yousef Khaled Omar
+ * @user	:	Youefkh05
+ */
+
 /*
- * Created	:	9/7/2024 12:22 PM
+ * Created	:	2/3/2025 12:16 PM
  *  Author	:	youefkh05
  *  @user	:	Youefkh05
  *  MISRA-C:	2012 guidelines adherence:
@@ -18,8 +31,8 @@
  * - Rule 10.1	:	Avoid magic numbers by using defined constants.
  * - Rule 21.1	:	Functions should not rely on undefined behavior.
  */
+
 /* ******************** Includes Section Start ************************ */
-#include "Stack/Stack_ds.h"
 #include "system_utilities/Std_types.h"
 #include <stdio.h>
 
@@ -38,10 +51,6 @@
 /* ******************** Global Definition Section End ******************* */
 
 /* ******************** Sub-program Declaration Section Start ********** */
-void swap_two_num(int *n1, int *n2);
-void bbl_sort(int *arr, int num);
-void ins_sort(int *arr, int num);
-void slc_sort(int *arr, int num);
 
 /* ******************** Sub-program Declaration Section End ************ */
 
@@ -49,71 +58,12 @@ int main() {
   // int arr1[10] = { 9,8,1,5,6,7,8,2,3,5 };
   int arr1[10] = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
   printf("Before:\n");
-  for (int i = 0; i < 10; i++) {
-    printf("%d ", arr1[i]);
-  }
-  printf("\n");
 
-  slc_sort(arr1, 10);
-  printf("After:\n");
-  for (int i = 0; i < 10; i++) {
-    printf("%d ", arr1[i]);
-  }
-  printf("\n");
-  // printSystemInfo();
   return 0;
 }
 
 /* ******************** Sub-program Section Start ********************* */
-void swap_two_num(int *n1, int *n2) {
-  int temp = *n1;
-  *n1 = *n2;
-  *n2 = temp;
-}
-
-void bbl_sort(int *arr, int num) {
-  char swp_flg = 0;
-  for (int i = num - 1; i > 0; i--) {
-    swp_flg = 0;
-    for (int j = 0; j < i; j++) {
-      if (arr[j] < arr[j + 1]) {
-        swap_two_num(&arr[j], &arr[j + 1]);
-        swp_flg = 1;
-      }
-    }
-    if (0 == swp_flg) {
-      return;
-    }
-  }
-}
-
-void ins_sort(int *arr, int num) {
-  int j = 0;
-  for (int i = 1; i < num; i++) {
-    j = i;
-    while (arr[j] < arr[j - 1] && 0 != j) {
-      swap_two_num(&arr[j], &arr[j - 1]);
-      j--;
-    }
-  }
-}
-
-void slc_sort(int *arr, int num) {
-  int i = 0, min_idx = 0;
-  for (int i = 0; i < num; i++) {
-    min_idx = i;
-
-    for (int j = i; j < num; j++) {
-      if (arr[j] < arr[min_idx]) {
-        min_idx = j;
-      }
-    }
-
-    if (i != min_idx) {
-      swap_two_num(&arr[i], &arr[min_idx]);
-    }
-  }
-}
+// Functions definitions go here
 /* ******************** Sub-program Section End ********************** */
 
 /*
@@ -121,7 +71,8 @@ void slc_sort(int *arr, int num) {
 **************************************************************************
 User            Date            Task    Details
 **************************************************************************
-Youefkh05          09/07/2024       0      Added MISRA-C:2012 compliance
-documentation
+Youefkh05       02/03/2025       0      Added MISRA-C:2012 complianced
+                                        documentation
+
 
 */

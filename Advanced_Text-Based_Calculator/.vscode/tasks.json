@@ -1,0 +1,36 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"type": "cppbuild",
+			"label": "Clang build",
+			"command": "C:\\mingw64LLVM_Clang_LLD_LLDB\\bin\\clang.exe",
+			"args": [
+				"-fcolor-diagnostics",
+				"-fansi-escape-codes",
+				"-g",
+				"${file}",
+				"-o",
+				"${fileDirname}\\advanced_calculator.exe"
+			],
+			"options": {
+				"cwd": "${fileDirname}"
+			},
+			"problemMatcher": [
+				"$gcc"
+			],
+			"group": "build",
+			"detail": "compiler: C:\\mingw64LLVM_Clang_LLD_LLDB\\bin\\clang.exe"
+		},
+		{
+			"label": "Run Clang",
+			"type": "shell",
+			"command": "${fileDirname}\\advanced_calculator.exe",
+			"group": {
+				"kind": "test",
+				"isDefault": true
+			},
+			"problemMatcher": []
+		}
+	]
+}
