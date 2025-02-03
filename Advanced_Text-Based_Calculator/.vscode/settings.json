@@ -1,6 +1,7 @@
 {
     "cmake.options.statusBarVisibility": "visible",
     "files.associations": {
-        "calculator.h": "c"
+        "calculator.h": "c",
+        "bitwise.h": "c"
     }
 }

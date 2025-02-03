@@ -2,13 +2,13 @@
 #define DYNAMIC_BINDING_H
 
 // Function prototypes for dynamic binding of arithmetic operations
-typedef double (*ArithmeticOperation)(double, double);
+//typedef double (*ArithmeticOperation)(double, double);
 
-double add(double a, double b);
-double subtract(double a, double b);
-double multiply(double a, double b);
-double divide(double a, double b);
+double addf(double a, double b);
+double subtractf(double a, double b);
+double multiplyf(double a, double b);
+double dividef(double a, double b);
 
-ArithmeticOperation getOperation(char operator);
+//ArithmeticOperation getOperation(char op);
 
 #endif // DYNAMIC_BINDING_H

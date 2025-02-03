@@ -5,10 +5,10 @@
             "name": "Debug Clang Executable",
             "type": "cppdbg",
             "request": "launch",
-            "program": "${fileDirname}/advanced_calculator.exe",
+            "program": "${workspaceFolder}/src/build_clang/advanced_calculator.exe",
             "args": [],
             "stopAtEntry": false,
-            "cwd": "${fileDirname}",
+            "cwd": "${workspaceFolder}/src/build_clang",
             "environment": [],
             "externalConsole": true,
             "MIMode": "gdb",
@@ -24,7 +24,8 @@
                     "text": "-gdb-set disassembly-flavor intel",
                     "ignoreFailures": true
                 }
-            ]
+            ],
+            "preLaunchTask": "Build Clang"
         }
     ]
 }

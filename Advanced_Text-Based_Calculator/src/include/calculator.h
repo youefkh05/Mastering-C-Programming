@@ -1,4 +1,4 @@
-/advanced_calculator/advanced_calculator/src/include/calculator.h
+
 
 #ifndef CALCULATOR_H
 #define CALCULATOR_H
@@ -9,6 +9,6 @@
 // Function prototypes
 void display_menu();
 void clear_history();
-void add_to_history(const char* operation);
+void add_to_history(const char *operation);
 
 #endif // CALCULATOR_H

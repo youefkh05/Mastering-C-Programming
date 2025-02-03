@@ -1,4 +1,3 @@
-/advanced_calculator/advanced_calculator/src/include/bitwise.h
 
 #ifndef BITWISE_H
 #define BITWISE_H

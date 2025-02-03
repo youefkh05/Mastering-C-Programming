@@ -2,19 +2,20 @@
 	"version": "2.0.0",
 	"tasks": [
 		{
-			"type": "cppbuild",
-			"label": "Clang build",
-			"command": "C:\\mingw64LLVM_Clang_LLD_LLDB\\bin\\clang.exe",
+			"label": "Build Clang",
+			"type": "shell",
+			"command": "clang",
 			"args": [
 				"-fcolor-diagnostics",
 				"-fansi-escape-codes",
 				"-g",
-				"${file}",
+				"${workspaceFolder}/src/main.c",
+				"${workspaceFolder}/src/arithmetic.c",
 				"-o",
-				"${fileDirname}/build_clang/advanced_calculator.exe"
+				"${workspaceFolder}/src/build_clang/advanced_calculator.exe"
 			],
 			"options": {
-				"cwd": "${fileDirname}"
+				"cwd": "${workspaceFolder}"
 			},
 			"problemMatcher": [
 				"$gcc"
@@ -25,12 +26,11 @@
 		{
 			"label": "Run Clang",
 			"type": "shell",
-			"command": "${fileDirname}/build_clang/advanced_calculator.exe",
+			"command": "${workspaceFolder}/src/build_clang/advanced_calculator.exe",
 			"group": {
 				"kind": "test",
 				"isDefault": true
-			},
-			"problemMatcher": []
+			}
 		}
 	]
 }
