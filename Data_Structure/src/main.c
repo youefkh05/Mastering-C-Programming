@@ -19,8 +19,8 @@
  * - Rule 21.1	:	Functions should not rely on undefined behavior.
  */
 /* ******************** Includes Section Start ************************ */
-#include "Stack/Stack_ds.h"
-#include "system_utilities/Std_types.h"
+#include "include/Stack/StackArrayDS.h"
+#include "include/system_utilities/Std_types.h"
 #include <stdio.h>
 
 /* ******************** Includes Section End ************************** */
@@ -46,6 +46,17 @@ void slc_sort(int *arr, int num);
 /* ******************** Sub-program Declaration Section End ************ */
 
 int main() {
+  // Create a stack
+  StackStatus_t status;
+  Stack_t *stack = CreateStack(10, &status);
+
+  if (status == STACK_OK) {
+    printf("Stack created successfully.\n");
+  } else {
+    printf("Failed to create stack.\n");
+    return -1;
+  }
+
   // int arr1[10] = { 9,8,1,5,6,7,8,2,3,5 };
   int arr1[10] = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
   printf("Before:\n");

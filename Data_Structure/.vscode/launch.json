@@ -5,7 +5,7 @@
             "name": "Debug Clang Executable",
             "type": "cppdbg",
             "request": "launch",
-            "program": "${fileDirname}/data_structure_clang.exe",
+            "program": "${workspaceFolder}/src/build_clang/data_structure_clang.exe",
             "args": [],
             "stopAtEntry": false,
             "cwd": "${fileDirname}",

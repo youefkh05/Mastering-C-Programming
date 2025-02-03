@@ -9,9 +9,12 @@
 				"-fcolor-diagnostics",
 				"-fansi-escape-codes",
 				"-g",
-				"${file}",
+				"${workspaceFolder}/src/main.c",
+				"${workspaceFolder}/src/include/Stack/StackArrayDS.c",
+				"-I",
+				"${workspaceFolder}/include",
 				"-o",
-				"${fileDirname}\\data_structure_clang.exe"
+				"${workspaceFolder}/src/build_clang/data_structure_clang.exe"
 			],
 			"options": {
 				"cwd": "${fileDirname}"
@@ -25,7 +28,7 @@
 		{
 			"label": "Run Clang",
 			"type": "shell",
-			"command": "${fileDirname}\\data_structure_clang.exe",
+			"command": "${workspaceFolder}/src/build_clang/data_structure_clang.exe",
 			"group": {
 				"kind": "test",
 				"isDefault": true

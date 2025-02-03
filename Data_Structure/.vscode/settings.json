@@ -1,0 +1,7 @@
+{
+    "files.associations": {
+        "std_types.h": "c",
+        "stack_ds.h": "c"
+    },
+    "cmake.options.statusBarVisibility": "visible"
+}
